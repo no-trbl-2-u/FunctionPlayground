@@ -1,3 +1,5 @@
+import Lambda
+
 absv :: Int -> Int
 absv n = if n > 0 then n else -n
 
