@@ -26,4 +26,10 @@ nameList = ["Steve", "Chris", "Nathan", "Josh"]
 lookForChris :: [String] -> [[Char]]
 lookForChris = filter isChris
 
+-- Guarded Equations ( (if) ? then : else/otherwise )
+
+isEven :: Int -> Bool
+isEven n | n `mod` 2 == 0 = true
+         | otherwise      = false
+
 
