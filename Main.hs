@@ -29,7 +29,11 @@ lookForChris = filter isChris
 -- Guarded Equations ( (if) ? then : else/otherwise )
 
 isEven :: Int -> Bool
-isEven n | n `mod` 2 == 0 = true
-         | otherwise      = false
+isEven n | n `mod` 2 == 0 = True
+         | otherwise      = False
+
+-- NOT WORKING!
+evenFromList :: [Int] -> ([Int] -> [Int])
+evenFromList [a] = filter isEven
 
 
